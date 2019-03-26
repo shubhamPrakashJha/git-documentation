@@ -13,3 +13,19 @@ The purpose of this guide is to provide a quick and easy to understand overview 
 Hope this helps. 😀 👍
 
 ## Key Terms
+
+### Version Control System (VCS) or Source Code Manager (SCM):
+
+### Commit (snapshot):
+
+### Repository (repo):
+
+### Working Directory:
+
+### Checkout:
+
+### Staging Area or Staging Index or Index:
+
+### SHA:
+
+### Branch:
