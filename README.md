@@ -71,3 +71,11 @@ Hope this helps. 😀 👍
 #### Branching
 
 #### Merging
+
+### Undoing Changes
+
+### Working With Remotes
+
+### Working On Another Developer's Repository
+
+### Staying In Sync With A Remote Repository
