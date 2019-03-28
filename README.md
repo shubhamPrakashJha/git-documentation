@@ -53,3 +53,21 @@ Hope this helps. 😀 👍
 > A branch is when a new line of development is created that diverges from the main line of development. This alternative line of development can continue without altering the main line.
 
 > Going back to the example of save point in a game, you can think of a branch as where you make a save point in your game and then decide to try out a risky move in the game. If the risky move doesn't pan out, then you can just go back to the save point. The key thing that makes branches incredibly powerful is that you can make save points on one branch, and then switch to a diﬀerent branch and make save points there, too.
+
+## GIT's FREQUENTLY USED COMMANDS
+
+### GIT REPO MANAGEMENT
+
+#### Create A Git Repo
+
+#### Review a Repo's History
+
+#### Add Commits To A Repo
+
+### TAGGING, BRANCHING, AND MERGING
+
+#### Tagging
+
+#### Branching
+
+#### Merging
