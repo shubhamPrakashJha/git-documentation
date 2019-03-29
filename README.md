@@ -82,4 +82,4 @@ Hope this helps. 😀 👍
 
 ---
 
-<center>Made with ♥ by Shubham Prakash</center>
+<p align='center'>Made with ♥ by Shubham Prakash</p>
