@@ -2,7 +2,7 @@
 
 ![git Logo](image/git.png)
 
-GIT QUICK REFERENCE GUIDE
+GIT QUICK REFERENCE MANUAL
 
 </h1>
 
