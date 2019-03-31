@@ -56,107 +56,107 @@ Hope this helps. 😀 👍
 
 ## GIT COMMANDS
 
-### Create A Git Repo
+### 1. Create A Git Repo
 
-#### git init
+#### i. git init
 
 > Create brand new repositories(repos) on your computer
 
-#### git clone
+#### ii. git clone
 
 > Copy Existing repos from somwhere else to your local computer
 
-#### git status
+#### iii. git status
 
 > Check the status of the repo
 
-### Review a Repo's History
+### 2. Review a Repo's History
 
-#### git log
+#### i. git log
 
 > Display information about the existing commits
 
-#### git show
+#### ii. git show
 
 > Display information about the given commit
 
-### Add Commits To A Repo
+### 3. Add Commits To A Repo
 
-#### git add
+#### i. git add
 
 > Add fies from the working directory to the staging index.
 
-#### git commit
+#### ii. git commit
 
 > Tke files from the staging index and saves them in the repository
 
-#### git diff
+#### iii. git diff
 
 > Display the difference between two versions of a file
 
-### TAGGING, BRANCHING, AND MERGING
+### 4. TAGGING, BRANCHING, AND MERGING
 
-#### git tag
+#### i. git tag
 
 > Add tags to specific commits
 
-#### git branch
+#### ii. git branch
 
 > Allows multiple lines of development
 
-#### git checkout
+#### iii. git checkout
 
 > Switch between different branch and tags
 
-#### git merge
+#### iv. git merge
 
 > Combine changes on different branches
 
-### Undoing Changes
+### 5. Undoing Changes
 
-#### git commit --amend
+#### i. git commit --amend
 
 > Alter the most-recent commit
 
-#### git revert
+#### ii. git revert
 
 > Reverses given commit
 
-#### git reset
+#### iii. git reset
 
 > Erases Commits
 
-### Working With Remotes
+### 6. Working With Remotes
 
-#### git remote
+#### i. git remote
 
 > Manage Remote Repository
 
-#### git push
+#### ii. git push
 
 > Send changes to the remote
 
-#### git pull
+#### iii. git pull
 
 > Retrieve updates from the remote `git pull = git fetch + git merge`
 
-#### gut fetch
+#### iv. git fetch
 
 > It just retrieves the commits and moves the tracking branch. It does not merge the local branch with the tracking branch.
 
-### Working On Another Developer's Repository
+### 7. Working On Another Developer's Repository
 
-#### Forking a repository
+#### i. Forking a repository
 
 > Forking is an action that's done on a hosting service, like GitHub. Forking a repository creates an identical copy of the original repository and moves this copy to your account.
 
 > You have total control over this forked repository. Modifying your forked repository does not alter the original repository in any way.
 
-#### Reviewing another's developer's change
+#### ii. Reviewing another's developer's change
 
 > discover information about a repository that you're collaborating on with others by grouping and filtering logs.
 
-#### Knowing what to work on
+#### iii. Knowing what to work on
 
 > Before you start doing any work, make sure to look for the project's CONTRIBUTING.md file.
 
@@ -177,9 +177,9 @@ Hope this helps. 😀 👍
 > -   use clear and descriptive commit messages
 > -   update the README file, if necessary
 
-### Staying In Sync With A Remote Repository
+### 8. Staying In Sync With A Remote Repository
 
-#### Create a pull request
+#### i. Create a pull request
 
 > A pull request is a request for the source repository to pull in your commits and merge them with their project. To create a pull request, a couple of things need to happen:
 >
@@ -189,7 +189,7 @@ Hope this helps. 😀 👍
 > -   push the commits back to your fork
 > -   create a new pull request and choose the branch that has your new commits
 
-#### Retrieve and sync updates
+#### ii. Retrieve and sync updates
 
 > When working with a project that you've forked. The original project's maintainer will continue adding changes to their project. You'll want to keep your fork of their project in sync with theirs so that you can include any changes they make.
 
@@ -203,7 +203,7 @@ Hope this helps. 😀 👍
 > -   merge the upstream's branch into a local branch
 > -   push the newly updated local branch to your origin repo
 
-#### Develop on an active pull request
+#### iii. Develop on an active pull request
 
 > As simple as at may seem, working on an active pull request is mostly about communication!
 
@@ -214,7 +214,7 @@ Hope this helps. 😀 👍
 
 > The commits will then show up on the pull request page.
 
-#### Squash Commits
+#### iv. Squash Commits
 
 > To squash commits together, we're going to use the extremely powerful `git rebase` command
 
