@@ -56,11 +56,9 @@ Hope this helps. 😀 👍
 
 ## GIT COMMANDS
 
-### GIT REPO MANAGEMENT
-
 ### Create A Git Repo
 
-#### git init
+#### git init `: helllo`
 
 #### git clone
 
