@@ -60,9 +60,25 @@ Hope this helps. 😀 👍
 
 ### Create A Git Repo
 
+#### git init
+
+#### git clone
+
+#### git status
+
 ### Review a Repo's History
 
+#### git log
+
+#### git show
+
 ### Add Commits To A Repo
+
+#### git add
+
+#### git commit
+
+#### git diff
 
 ### TAGGING, BRANCHING, AND MERGING
 
@@ -74,11 +90,41 @@ Hope this helps. 😀 👍
 
 ### Undoing Changes
 
+#### git commit --amend
+
+#### git revert
+
+#### git reset
+
 ### Working With Remotes
+
+#### Show Remote Repo
+
+#### Add Connection from Local to Remote
+
+#### Push Changes To A Remote
+
+#### Pulling Changes From A Remote
+
+#### Disable automatic merge of Master with origin/master(tracking branch)
 
 ### Working On Another Developer's Repository
 
+#### Forking a repository
+
+#### Reviewing another's developer's change
+
+#### Knowing what to work on
+
 ### Staying In Sync With A Remote Repository
+
+#### Create a pull request
+
+#### Retrieve and sync updates
+
+#### Develop on an active pull request
+
+#### Squash Commits
 
 ---
 
