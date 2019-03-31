@@ -58,7 +58,7 @@ Hope this helps. 😀 👍
 
 ### Create A Git Repo
 
-#### git init `: helllo`
+#### git init
 
 #### git clone
 
