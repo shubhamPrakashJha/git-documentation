@@ -232,4 +232,6 @@ $ git rebase -i HEAD~3
 
 > I recommend that you create a `backup` branch before rebasing, so that it's easy to return to your previous state. If you're happy with the rebase, then you can just delete the `backup` branch!
 
+---
+
 <p align='center'>Made with ♥ by Shubham Prakash</p>
