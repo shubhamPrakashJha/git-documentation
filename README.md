@@ -58,11 +58,11 @@ Hope this helps. 😀 👍
 
 ### GIT REPO MANAGEMENT
 
-#### Create A Git Repo
+### Create A Git Repo
 
-#### Review a Repo's History
+### Review a Repo's History
 
-#### Add Commits To A Repo
+### Add Commits To A Repo
 
 ### TAGGING, BRANCHING, AND MERGING
 
