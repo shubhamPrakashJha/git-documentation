@@ -295,6 +295,25 @@ Hope this helps. 😀 👍
 
 > Alter the most-recent commit
 
+-   ```bash
+      # Update Last Commit
+      $ git commit --amend
+
+      # to rename last commit:
+      # i. keep Working Directory clean i.e don't add any new code change
+      # and run
+      $ git commit --amend
+
+      # ii. to add file/change 2 file:
+      # i. eedit the file(s)
+      # ii. save the file(s)
+      # iii. stage the file(s)
+      # and run
+      $ git commit --amend
+      # to Unmerge
+      $ git reset --hard HEAD^
+    ```
+
 #### git revert
 
 > Reverses given commit
