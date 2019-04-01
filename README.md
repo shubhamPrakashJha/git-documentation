@@ -462,30 +462,30 @@ Hope this helps. 😀 👍
 
 > discover information about a repository that you're collaborating on with others by grouping and filtering logs.
 
--    ```bash
-        # group commits by author
-        # i. commits sorted by author
-        $ git shortlog (commits shorted by author)
-        # ii. commits sorted Numerically(-n) by no. of commits author have(-s)
-        $ git shortlog -s -n
+-   ```bash
+     # group commits by author
+     # i. commits sorted by author
+     $ git shortlog (commits shorted by author)
+     # ii. commits sorted Numerically(-n) by no. of commits author have(-s)
+     $ git shortlog -s -n
 
-        # filter commits with the  by author
-        # i. commits by one given author
-        $ git shortlog --author=NAME
-        # ii. show detailed commit by given author
-        $ git log --author=NAME
-        # iii. to avoid multiple user with same name
-        $ git log --author="Name subname"
-        # iv. show oneline commit by given author
-        $ git log --oneline --author="Name Subname"
+     # filter commits with the  by author
+     # i. commits by one given author
+     $ git shortlog --author=NAME
+     # ii. show detailed commit by given author
+     $ git log --author=NAME
+     # iii. to avoid multiple user with same name
+     $ git log --author="Name subname"
+     # iv. show oneline commit by given author
+     $ git log --oneline --author="Name Subname"
 
-        # filter commits by 'keywords'
-        # i. commit having keyword 'bug'
-        $ git log --grep=bug
-        $ git log --grep bug
-        # ii. commit having keyword 'with spaces'
-        $ git log --grep="with spaces"
-        $ git log --grep "with spaces"
+     # filter commits by 'keywords'
+     # i. commit having keyword 'bug'
+     $ git log --grep=bug
+     $ git log --grep bug
+     # ii. commit having keyword 'with spaces'
+     $ git log --grep="with spaces"
+     $ git log --grep "with spaces"
     ```
 
 #### Knowing what to work on
@@ -521,6 +521,11 @@ Hope this helps. 😀 👍
 > -   push the commits back to your fork
 > -   create a new pull request and choose the branch that has your new commits
 
+-   ```
+      Source Remote Repo(upstream) --Fork repo--> Your's Remote Repo(origin) --clone--> local repo --.
+      Source Remote Repo(upstream) <--Pull Req-- Your's Remote Repo(origin) <--commit-- local repo<--'
+    ```
+
 #### Retrieve and sync updates
 
 > When working with a project that you've forked. The original project's maintainer will continue adding changes to their project. You'll want to keep your fork of their project in sync with theirs so that you can include any changes they make.
@@ -534,6 +539,39 @@ Hope this helps. 😀 👍
 > -   fetch the new upstream remote
 > -   merge the upstream's branch into a local branch
 > -   push the newly updated local branch to your origin repo
+
+-   ```bash
+      # Retrieving Upstream Changes to local repo
+
+      # Step i. add remote connection to source repo(upstream)
+      $ git remote add <upstream> <source-repo-path>
+
+      # Step ii.fetch changes from the source repo's(upstream) master(upstream/master) branch to local repo
+      $ git fetch upstream master
+    ```
+
+-   ```bash
+      # To get these changes into forked repo from local repo
+
+      # Step i. checkout local (master) branch
+      $ git checkout master
+
+      # Step ii. merge (upstream/master) tracking branch to local (master) branch
+      $  git merge upstream/master
+
+      # Step ii. push the local (master) to your remote repo(origin)
+      $  git push origin master
+    ```
+
+-   ```bash
+      # In case you want to reset remote name
+
+      # i. rename source repo remote name(i.e upstream )
+      $ git remote rename upstream source-repo
+
+      # ii. rename your repo remote name(i.e origin)
+      $  git remote rename origin mine
+    ```
 
 #### Develop on an active pull request
 
@@ -550,15 +588,29 @@ Hope this helps. 😀 👍
 
 > To squash commits together, we're going to use the extremely powerful `git rebase` command
 
-> The git rebase command is used to do a great many things.
+-   ```bash
+      # To Squash/Combine commits together
 
-```bash
-# interactive rebase
-$ git rebase -i <base>
+      # Step i. Its good to create a backup branch
+      $ git branch backup
 
-# interactively rebase the commits to the one that's 3 before the one we're on
-$ git rebase -i HEAD~3
-```
+      # Step ii. run rebasing commmad
+      $  git rebase -i HEAD~3
+      or
+      $  git rebase -i <base>
+
+      # Step iii . A new windwo will open in editor, replace the commands from `pick` to `squash` on commits you want to combine and `pick`/`reword` on base.Then save & close
+
+       # Step iv . If reword selected, then Reword the base commit message.Then save & close
+
+      # Step v. Delete other commits message except base message. Then save & close
+
+      # Squashing is successfully done
+
+      # Step vi. To push to origin, Forse push the squashed branch
+      $ git push -f origin <branch2push>
+
+    ```
 
 > Inside the interactive list of commits, all commits start out as pick, but you can swap that out with one of the other commands (`reword`, `edit`, `squash`, `fixup`, `exec`, and `drop`).
 
