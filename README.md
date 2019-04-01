@@ -178,11 +178,27 @@ Hope this helps. 😀 👍
 
 #### git commit
 
-> Tke files from the staging index and saves them in the repository
+> Takes files from the staging index and saves them in the repository
+
+-   ```bash
+      # This will open the code editor that is specified in your configuration.
+      # i. a commit message must be supplied
+      # ii. save the file after adding a commit message
+      # iii. close the editor to make the commit
+      $ git commit
+
+      # to bypass editor to add commit msg use
+       $ git commit -m "commit message"
+    ```
 
 #### git diff
 
 > Display the difference between two versions of a file
+
+-   ```bash
+      # It shows the changes which are saved but not committed
+      $ git diff
+    ```
 
 ### TAGGING, BRANCHING, AND MERGING
 
