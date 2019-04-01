@@ -1,9 +1,7 @@
-<h1 align='center'>
 
 ![git Logo](/image/git.png)
-
+<h1 align='center'>
 GIT QUICK REFERENCE GUIDE
-
 </h1>
 
 ## Objective
