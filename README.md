@@ -149,9 +149,32 @@ Hope this helps. 😀 👍
 
 ### Add Commits To A Repo
 
+#### git status
+
+> The git status output will give you advice or hints as to what you should do next.
+
+-   ```bash
+      # the output of the git status command is that it's telling us that the files are untracked by Git.
+      $ git status
+    ```
+
 #### git add
 
 > Add fies from the working directory to the staging index.
+
+-   ```bash
+      # The git add command is used to move files from the Working Directory to the Staging Index.
+      $ git add <file1> <file2> … <fileN>
+
+      # the period . can be used in place of a list of files to tell Git to add the current directory (and all nested files)
+      $ git add .
+
+      # to discard changes in working directory
+      $ git checkout -- <file>
+
+      # to UNSTAGE files from the Staging Index to the Working Directory.
+      $ git rm --cached <file>
+    ```
 
 #### git commit
 
