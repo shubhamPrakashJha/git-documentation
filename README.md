@@ -375,17 +375,76 @@ Hope this helps. 😀 👍
 
 > Manage Remote Repository
 
+-   ```bash
+      # Show all Remote Repo
+
+      # i. show all remote repositories short name
+      $ git remote
+
+      # ii. To verify/find full path of all remote repo and their shortname
+      $ git remote -v
+    ```
+
+-   ```bash
+      # Add Connection from Local(PC) to Remote(Github)
+
+      # Step 1. Crete a blank repo in Github
+
+      # Step 2. Run these 2 below command to connect local repo to the newly created remote repo (i.e in github) named 'origin' by defualt
+      $ git remote add <origin> <gituhb_path>
+      $ git push -u <origin> master
+    ```
+
+    `You can use your own given name instead of origin`
+
 #### git push
 
 > Send changes to the remote
+
+-   ```bash
+      # The git push command is used to send commits from a local repository to a remote repository.
+
+      # The git push command takes:
+        # i. the shortname of the remote repository you want to send commits to
+        # ii. the name of the branch that has the commits you want to send
+      $ git push <remote-repo-shortName> <branch-to-push>
+
+    ```
 
 #### git pull
 
 > Retrieve updates from the remote `git pull = git fetch + git merge`
 
+-   ```bash
+      # git pull command do two things:
+      # i. fetching remote changes (which adds the commits to the local repository and moves the tracking branch(origin/master) to point to the most recent commit)
+      # ii. merging the local branch(master) with the tracking branch(origin/master)
+      $ git pull <remote-repo-shortName> <branch2pull>
+    ```
+
 #### gut fetch
 
 > It just retrieves the commits and moves the tracking branch. It does not merge the local branch with the tracking branch.
+
+-   ```bash
+      # git Fetch command do only one thing:
+      # i. retrieves the commits and moves the tracking branch(origin/master) to most recent commit
+
+      # It does not merge the local branch(master) with the tracking branch(origin/master).
+
+      #Its is done mostly when both the repo has changes which other doesn't have to avoid merge conflict
+      $ git fetch origin master
+    ```
+
+-   ```bash
+      # To merge (master) with (origin/master) after git fetch:
+      # i. go to (master)
+      $ git checkout master
+      # ii. merege (origin/master) to (master)
+      $ git merge origin/master
+      # iii. Push (master) to remote
+      $  git push origin master
+    ```
 
 ### Working On Another Developer's Repository
 
