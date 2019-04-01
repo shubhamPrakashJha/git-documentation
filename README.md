@@ -454,9 +454,39 @@ Hope this helps. 😀 👍
 
 > You have total control over this forked repository. Modifying your forked repository does not alter the original repository in any way.
 
+-   ```
+      Other's Remote Repo --Fork--> Your's Remote Repo
+    ```
+
 #### Reviewing another's developer's change
 
 > discover information about a repository that you're collaborating on with others by grouping and filtering logs.
+
+-    ```bash
+        # group commits by author
+        # i. commits sorted by author
+        $ git shortlog (commits shorted by author)
+        # ii. commits sorted Numerically(-n) by no. of commits author have(-s)
+        $ git shortlog -s -n
+
+        # filter commits with the  by author
+        # i. commits by one given author
+        $ git shortlog --author=NAME
+        # ii. show detailed commit by given author
+        $ git log --author=NAME
+        # iii. to avoid multiple user with same name
+        $ git log --author="Name subname"
+        # iv. show oneline commit by given author
+        $ git log --oneline --author="Name Subname"
+
+        # filter commits by 'keywords'
+        # i. commit having keyword 'bug'
+        $ git log --grep=bug
+        $ git log --grep bug
+        # ii. commit having keyword 'with spaces'
+        $ git log --grep="with spaces"
+        $ git log --grep "with spaces"
+    ```
 
 #### Knowing what to work on
 
