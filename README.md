@@ -62,13 +62,28 @@ Hope this helps. 😀 👍
 
 > Create brand new repositories(repos) on your computer
 
+-   ```bash
+      # Use the git init command to create a new, empty repository in the current directory.
+      $ git init
+    ```
+
 #### git clone
 
 > Copy Existing repos from somwhere else to your local computer
 
+-   ```bash
+      # The git clone command is used to create an identical copy of an existing repository.
+      $ git clone <path-to-repository-to-clone> <folder-name>
+    ```
+
 #### git status
 
 > Check the status of the repo
+
+-   ```bash
+      # The git status command will display the current status of the repository.
+      $ git status
+    ```
 
 ### Review a Repo's History
 
@@ -76,9 +91,61 @@ Hope this helps. 😀 👍
 
 > Display information about the existing commits
 
+-   ```bash
+      # The git log command is used to display all of the commits of a repository.
+      $ git log
+    ```
+-   ```bash
+      # This command :
+      # i. lists one commit per line, shows the first 7 characters of the commit's SHA,
+      # ii. shows the commit's message
+      $ git log --oneline
+    ```
+-   ```bash
+      # This command:
+      # i. displays the file(s) that have been modified,
+      # ii. displays the number of lines that have been added/removed,
+      # iii. displays a summary line with the total number of modified files and lines that have been added/removed
+      $ git log --stat
+    ```
+-   ```bash
+      # This command adds the following to the default output:
+      # i. displays the files that have been modified
+      # ii. displays the location of the lines that have been added/removed
+      # iii. displays the actual changes that have been made
+      $ git log --patch
+    ```
+    -   ```bash
+        # Extras:
+        # same as `git log --patch`
+        $ git log -p
+        # To view patch of a specific commit
+        $ git log -p <SHA>
+        # file stats with code change
+        $ git log -p --stat
+        # show changes but ingore white space changes
+        $ git log -p -w <SHA>
+        ```
+
 #### git show
 
-> Display information about the given commit
+> Display information about the one given commit
+
+-   ```bash
+      # git show displays:
+      # i. the commit
+      # ii. the author
+      # iii. the date
+      # iv. the commit message
+      # v. the patch information
+
+      # display the most recent commit.
+      $ git show
+      # display commit of provided SHA.
+      $ git show <SHA>
+      # if --stat is used then --patch/-p must be used, -w is to ignore whitespace
+      $ git show --stat -p -w [SHA]
+    ```
 
 ### Add Commits To A Repo
 
