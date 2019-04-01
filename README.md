@@ -12,6 +12,53 @@ The purpose of this guide is to provide a quick and easy to understand overview 
 
 Hope this helps. 😀 👍
 
+## Table of Contents
+
+1. [Create A Git Repo][1]<br>
+  i. [git init](#i-git-init)<br>
+  ii. [git clone](#ii-git-clone)<br>
+  iii. [git status](#iii-git-status)<br>
+2. [Review a Repo's History][2]<br>
+  i. [git log](#i-git-log)<br>
+  ii. [git show](#ii-git-show)<br>
+3. [Add Commits To A Repo][3]<br>
+  i. [git status](#i-git-status)<br>
+  ii. [git add](#ii-git-add)<br>
+  iii. [git commit](#iii-git-commit)<br>
+  iv. [git diff]()<br>
+4. [TAGGING, BRANCHING, AND MERGING][4]<br>
+  i. [git tag](#i-git-tag)<br>
+  ii. [git branch](#ii-git-branch)<br>
+  iii. [git checkout](#iii-git-checkout)<br>
+  iv. [git merge](#iv-git-merge)<br>
+5. [Undoing Changes][5]<br>
+  i. [git commit --amend](#i-git-commit---amend)<br>
+  ii. [git revert](#ii-git-revert)<br>
+  iii. [git reset](#iii-git-reset)<br>
+6. [6. Working With Remotes][6]<br>
+  i. [git remote](#i-git-remote)<br>
+  ii. [git push](#ii-git-push)<br>
+  iii. [git pull](#iii-git-pull)<br>
+  iv. [git fetch](#iv-git-fetch)<br>
+7. [Working On Another Developer's Repository][7]<br>
+  i. [Forking a repository](#i-forking-a-repository)<br>
+  ii. [Reviewing another's developer's change](#ii-reviewing-anothers-developers-change)<br>
+  iii. [Knowing what to work on](#iii-knowing-what-to-work-on)<br>
+8. [Staying In Sync With A Remote Repository][8]<br>
+  i. [Create a pull request](#i-create-a-pull-request)<br>
+  ii. [Retrieve and sync updates](#ii-retrieve-and-sync-updates)<br>
+  iii. [Develop on an active pull request](#iii-develop-on-an-active-pull-request)<br>
+  iv. [Squash Commits](#iv-squash-commits)<br>
+
+[1]: #1-Create-A-Git-Repo
+[2]: #2-Review-a-Repo's-History
+[3]: #3-Add-Commits-To-A-Repo-
+[4]: #4.-TAGGING,-BRANCHING,-AND-MERGING
+[5]: #5Undoing-Changes
+[6]: #6.-Working-With-Remotes
+[7]: #7.-Working-On-Another-Developer's-Repository
+[8]: #8.-Staying-In-Sync-With-A-Remote-Repository
+
 ## Key Terms
 
 ### Version Control System (VCS) or Source Code Manager (SCM):
