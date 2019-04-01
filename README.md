@@ -206,17 +206,88 @@ Hope this helps. 😀 👍
 
 > Add tags to specific commits
 
+-   ```bash
+      # show all tag
+      $ git tag
+
+      # add a lightweight tag
+      $ git tag v1.0
+
+      # To add a annotated tags: name, date, message
+      $ git tag -a v1.0
+
+      # to view annotated tags.
+      $ git show v1.0
+
+      # to add tag to prev comit
+      $ git tag -a v1.0 <SHA>
+
+      # to delete a tag
+      $ git tag -d v1.0
+    ```
+
 #### git branch
 
 > Allows multiple lines of development
+
+-   ```bash
+      # to list all branches
+      $ git branch
+
+      # to show commits of all branches in a decorated graphical way
+      $ git log --oneline --graph --all
+
+      # to create a new branch
+      $ git branch <name-the-branch>
+
+      # to create a new branch on a previous commit
+      $ git branch <name-the-branch> <SHA>
+
+      # to delete branch
+      $ git branch -d <branch-name>
+
+      # to force delete a branch
+      $ git branch -D <branch-name>
+    ```
 
 #### git checkout
 
 > Switch between different branch and tags
 
+-   ```bash
+      # to switch 2 other branch
+      $ git checkout <branch-to-switch>
+
+      # to create and switch to new branch
+      $ git checkout -b <branch-to-create> <SHA/old-branch-on-which-creating>
+    ```
+
 #### git merge
 
 > Combine changes on different branches
+
+> There are two types of merges:
+>
+> -   Fast-forward merge – the branch being merged in must be ahead of the checked out branch. The checked out branch's pointer will just be moved forward to point to the same commit as the other branch.
+> -   the regular type of merge
+>     -   two divergent branches are combined
+>     -   a merge commit is created
+
+-   ```bash
+      # STEP 1. go to the BASE branch on which merhing is to be done
+      $ git checkout <base-branch>
+
+      # Step 2. merge the other branch which is to be merged
+      $ git merge <branch-to-be-merged>
+
+      # Step 3. In case if merge conflict coccurs, then:
+      # i. edit the conflicted file
+      # ii. git add <file-name>
+      # iii. git commit
+
+      # to Unmerge
+      $ git reset --hard HEAD^
+    ```
 
 ### Undoing Changes
 
