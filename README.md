@@ -356,6 +356,19 @@ Hope this helps. 😀 👍
       $ git merge backup
     ```
 
+-   ```bash
+      # To Access Erased Content:
+
+      # Git keeps track of everything for about 30 days before it completely erases anything
+
+      # To access this content, you'll need to use
+      $ git reflog
+
+      # Check out this links for more info:
+      https://www.atlassian.com/git/tutorials/rewriting-history
+
+    ```
+
 ### Working With Remotes
 
 #### git remote
