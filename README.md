@@ -304,23 +304,57 @@ Hope this helps. 😀 👍
       # and run
       $ git commit --amend
 
-      # ii. to add file/change 2 file:
-      # i. eedit the file(s)
+      # to add file/change 2 file:
+      # i. edit the file(s)
       # ii. save the file(s)
-      # iii. stage the file(s)
+      # iii. stage the file(s) i.e git add <file>
       # and run
       $ git commit --amend
-      # to Unmerge
-      $ git reset --hard HEAD^
     ```
 
 #### git revert
 
 > Reverses given commit
 
+-   ````bash
+          # This command:
+          # i. will undo the changes that were made by the provided commit change
+          # ii. creates a new commit to record the change
+          $ git revert <SHA-of-commit-to-revert>
+        ```
+    e
+    ````
+
 #### git reset
 
 > Erases Commits
+
+-   ```bash
+      # Before erasing commit, its a good practice to create a backup branch using:
+      $ git branch backup
+
+      # to erase the commit & move the changes to Working Directory(WD)
+      $ git reset --mixed <reference_ to_commit>
+      $ git reset <reference_ to_commit>
+
+      # to erase the commit & move the changes to Staging Index(SI)
+      $ git reset --soft <reference_ to_commit>
+
+      # to erase the commit & move the changes to Trash
+      $ git reset --hard <reference_ to_commit>
+    ```
+
+    `Checkout relative commit references to learn how to reference to commit`
+
+-   ```bash
+      # To UNDO RESET, if backup branch is already created:
+
+      # Step 1: remove uncommited changes i.e remove changes in working directory
+      $ git checkout -- <file-name>
+
+      # Step 2: Merge the backup branch
+      $ git merge backup
+    ```
 
 ### Working With Remotes
 
